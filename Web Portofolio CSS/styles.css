@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    color: white;
+}
+
+.header {
+    padding: 80px;
+    text-align: center;
+    background-image: url(https://wallpaperaccess.com/full/38150.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 120%;
+    color: white;
+    font-weight: bold;
+}
+
+span {
+    color:#f9004d;
+    font-weight: bold;
+}
+
+.header h1 {
+    font-size: 40px;
+}
+
+.header h3 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #191919;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar a.right {
+    float: right;
+}
+
+.navbar a:hover {
+    color: #f9004d;
+   border-bottom: 3px solid #f9004d;
+}
+
+.navbar a.active {
+    background-color: #f9004d;
+    color: white;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.side {
+    -ms-flex: 30%;
+    flex: 30%;
+    background-color: #333;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    background-color: #ddd;
+}
+
+.skills {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.desain {
+    width: 87%;
+    background-color: #f9004d;
+}
+
+.coding {
+    width: 63%;
+    background-color: #f9004d;
+}
+
+.office {
+    width: 74%;
+    background-color: #f9004d;
+}
+
+.social {
+    right: 100vh;
+    text-align: center;
+    margin: 50px;
+}
+
+.social a {
+    color:white;
+    background: rgba(0,0,0,0.4);
+    font-weight: 500;
+    padding: 20px;
+    width: 300px;
+}
+
+.social a:hover {
+    color:#f9004d;
+    border-bottom: 3px solid #f9004d;
+}
+
+.social i {
+    font-size: 20px;
+}
+
+.main {
+    -ms-flex: 70%;
+    flex: 70%;
+    background-color: rgb(84, 84, 84);
+    padding: 20px;
+}
+
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #191919;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
