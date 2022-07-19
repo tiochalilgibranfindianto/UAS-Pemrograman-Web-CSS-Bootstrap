@@ -1,0 +1,306 @@
+/* Jumbotron */
+.jumbotron {
+  padding-top: 10rem;
+  color: white;
+  background-image: url(https://images.pexels.com/photos/1006222/pexels-photo-1006222.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+}
+
+section {
+  padding-top: 5rem;
+}
+
+/* About */
+#about .btn {
+  border: 1px solid transparent;
+  width: 40%;
+  padding: 9px 11px;
+  background: #191919;
+  border-radius: 5px;
+  margin-top: none;
+}
+
+#about .btn a {
+  color: #ffff;
+  text-decoration: none;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+#about .btn:hover {
+  background-color: #ffff;
+  border: 2px solid #191919;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#about .btn:hover a {
+  color: #191919;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Rancho&family=Water+Brush&display=swap');
+
+/* Skill */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+
+.skills_section {
+  width: 100%;
+  height: 100vh;
+  padding: 0px 13%;
+  background-color: #ffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.skills_head {
+  width: 100%;
+  margin-bottom: 100px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.skills_head h2 {
+  font-size: 30px;
+  margin-bottom: -5px;
+}
+
+.skills_head h2 span {
+  color: #191919;
+}
+
+.skills_main {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 30px;
+  grid-column-gap: 50px;
+}
+
+.skills_main .skill_bar .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.skill_bar .info p:nth-child(2) {
+  font-weight: 500;
+}
+
+.skill_bar .bar {
+  width: 100%;
+  height: 10px;
+  background-color: rgba(0, 0, 0, 0.144);
+  border-radius: 25px;
+  margin-top: 5px;
+  position: relative;
+}
+
+.skill_bar .bar span {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  background-color: #191919;
+  border-radius: 25px;
+}
+
+.skill_bar .bar .html {
+  width: 74%;
+  animation: html 2s;
+}
+
+@keyframes html {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 74%;
+  }
+}
+
+.skill_bar .bar .css {
+  width: 63%;
+  animation: css 2s;
+}
+
+@keyframes css {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 63%;
+  }
+}
+
+.skill_bar .bar .press {
+  width: 43%;
+  animation: sass 2s;
+}
+
+@keyframes press {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 43%;
+  }
+}
+
+.skill_bar .bar .desain {
+  width: 84%;
+  animation: css 2s;
+}
+
+@keyframes desain {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 84%;
+  }
+}
+
+.skill_bar .bar .tenis {
+  width: 57%;
+  animation: react 2s;
+}
+
+@keyframes tenis {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 57%;
+  }
+}
+
+.skill_bar .bar .word {
+  width: 63%;
+  animation: node 2s;
+}
+
+@keyframes word {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 63%;
+  }
+}
+
+.skill_bar .bar .excel {
+  width: 45%;
+  animation: express 2s;
+}
+
+@keyframes excel {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 45%;
+  }
+}
+
+.skill_bar .bar .power {
+  width: 48%;
+  animation: mongo 2s;
+}
+
+@keyframes power {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 48%;
+  }
+}
+
+/* Testimonials */
+.testimonials {
+  padding: 40px 0;
+  background: #f1f1f1;
+  color: #191919;
+  text-align: center;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.border {
+  width: 160px;
+  height: 5px;
+  background: #191919;
+  margin: 26px auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.col {
+  flex: 33.33%;
+  max-width: 33.33%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+.testimonial {
+  background: #fff;
+  padding: 30px;
+}
+
+.testimonial img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.name {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.stars {
+  color: #191919;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width:960px) {
+  .col {
+    flex: 100%;
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .col {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
